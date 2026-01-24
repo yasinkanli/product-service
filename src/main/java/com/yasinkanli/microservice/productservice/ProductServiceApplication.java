@@ -1,4 +1,4 @@
-package com.yasinkanli.microservice.productservice.product;
+package com.yasinkanli.microservice.productservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

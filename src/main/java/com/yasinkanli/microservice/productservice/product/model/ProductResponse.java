@@ -1,4 +1,7 @@
-package com.yasinkanli.microservice.productservice.product;
+package com.yasinkanli.microservice.productservice.product.model;
 
-public class ProductResponse {
+public record ProductResponse(String productId,String product) {
+
+
+
 }

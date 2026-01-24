@@ -1,5 +1,6 @@
-package com.yasinkanli.microservice.productservice;
+package com.yasinkanli.microservice.productservice.product.controller;
 
+import com.yasinkanli.microservice.productservice.product.model.ProductResponse;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,8 +14,7 @@ public class ProductController {
   
 
   @GetMapping(value = "/{productId}", produces = MediaType.APPLICATION_JSON_VALUE)
-  public ResponseEntity<?> getProduct(@PathVariable int productId) {
-    return ResponseEntity.ok(productId);
-
+  public ResponseEntity<?> getProduct(@PathVariable String productId) {
+    return ResponseEntity.ok(new ProductResponse(productId,"Cell Phone"));
   }
 }
